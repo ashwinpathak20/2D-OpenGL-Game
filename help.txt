@@ -1,0 +1,107 @@
+﻿Description:
+	The game is designed using openGL. Other Libraries used are libao,libmpg123. 
+	The game starts with a welcome screen. After pressing y key of the keyboard, the game is started. 
+	Random blocks fall after every (1/speed) seconds of random colors and positons. Cannon shoots out a laser which in turn hits the falling blocks or reflect from the mirrors or get absorbed by the walls.
+	Cannon can move up and down, also it can change its angle of inclination from -45 degrees to 45 degrees. Laser is shot after every 1 sec at stage 1, after every 2 secs at stage 2, after every 3 secs at stage 3, after every 4 secs at stage 4.
+	Speed of the falling bricks can be also adjusted.
+	Zooming and panning functionality has also been implemented.
+	The center mirror can move up and down too.
+	Two drums collect the falling blocks. If they overlap, they can only collect black block.
+	A golden fruit on the tree can help in getting extra bonus.
+	There are 5 lives given initially, if player uses all of them , then game is over and a 'you lose' window appears. Player can continue by pressing c key or quit by pressing q key.
+	If score > 100 , player wins and 'you win' window apperars. Player can continue by pressing c key or quit by pressing q key.
+	Game can be paused by p key.
+	Game sounds are also included at the background while playing.
+	Game is set on the beach as these collecting of blocks kinds of games are generally played at beach parties :p.
+
+Controls:
+1.) To open the game:
+	run ./sample2D
+	(after compilation)
+
+2.) To start the game:
+	press y (when welcome screen appears).
+
+3.) Controls of the game:
+	a.) keyboard:
+	
+
+a:
+To increase the angle of projection of the cannon (max till 45 degrees).
+D:
+To decrease the angle of projection of
+the cannon (min till 45 degress).
+S:
+To move up the cannon(max till the top of window).
+F:
+To move down the cannon(min till the bottom of the line separating drum and laser).
+N:
+To increase the speed of the falling blocks.
+M:
+To decrease the speed of the falling blocks (min 0.5).
+w:
+To move up the center mirror (till some extent).
+E:
+To move down the center mirror (till some extent).
+Space bar:
+To launch the laser (but after a min loading time).
+Ctrl + left:
+To move the red-drum left (till left boundary).
+Ctrl + right:
+To move the red-drum right (till right boundary).
+Alt + left:
+To move the green-drum left (till left boundary).
+Alt + right:
+To move the green-drum right (till right boundary).
+Up :
+Zoom in (to some extent).
+Down:
+Zoom out (to some extent).
+Left:
+panning (to move towards left).
+Right:
+panning (to move towards right).
+C:
+To continue the game after winning or losing.
+P:
+To pause the game and to resume.
+Y:
+To start the game from the welcome screen.
+Q:
+To quit the game.
+Esc:
+To abort the game.
+
+		
+	b.)mouse:
+
+Left-mouse click in the falling block area.::
+Fires a laser shot in the direction 
+of the cursor ( after a min loading time).
+Left-mouse click on either of the lower portion of the drums. :
+Moves the selected drum (within boundaries).
+Left-mouse click on the back part of the cannon. :
+Moves the cannon (within boundaries).
+Mouse-scroll :
+Zoom-in & Zoom-out
+Right-Mouse click :
+Panning of the screen
+
+
+Scoring:
+	1.) +10, if right colured block enters the right colured drum and the drums are not overlapping.
+	2.) +30, if the golden-fruit is shot on the tree.
+	3.) -5, if black block enters either of the drum.
+	4.) -3, if laser shoots out green or red coloured blocks.
+	5.) life-- , if black block enters the drum.
+	6.) life-- , if laser shoots out green or red colured blocks.
+	7.) if score>100, player wins.
+	8.) if life<0 (out of 5) player loses.
+	9.) Stages:
+		stage-1 : 25>Score>=0, loading time of the cannon : 1sec,
+		stage-2 : 50>Score>=25, loading time of the cannon : 2sec,
+		stage-3 : 75>Score>=50, loading time of the cannon : 3sec,
+		stage-4 : 100>=Score>=75, loading time of the cannon : 4sec
+
+
+BEST OF LUCK!! :)
